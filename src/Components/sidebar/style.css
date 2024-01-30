@@ -1,41 +1,123 @@
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     /* background-color: #eee; */
     width: 306px;
     height: 100vh;
     padding: 25px;
+    justify-content: space-between;
 }
+
 .logo {
     display: flex;
     align-items: center;
     width: 195px;
-    height:39px;
+    height: 39px;
     gap: 10px;
 }
+
 .links .title {
     display: flex;
     align-items: center;
-    color:#9197B3;
+    color: #9197B3;
     gap: 10px;
     margin: 20px 0;
 }
+
 .items li {
     list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #9197B3;
+    margin: 10px 0 10px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.items li div {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.items li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #5932EA;
+
+}
+
+.box {
+    color: white;
+    background-color: #5932EA;
+    background-image: linear-gradient(to right, #EAABF0, #4623E9);
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5em;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.box button {
+    width: 15em;
+    padding: 8px;
+    border:0;
+    margin-top: 25px;
+    background-color: white;
+    font-weight: bold;
+    color: #4623E9;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.userItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 30px;
+    cursor: pointer;
+}
+.userItem div{
     display: flex;
     align-items: center;
     gap: 10px;
-    color:#9197B3;
-    margin: 10px 0 10px;
-    width: 100%;
-    background-color: #5932EA;
-    border-radius:10px ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ;
-    padding: 10px;
-    cursor: pointer;
-    color: white;
+}
+
+.userItem .name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.userItem .title {
+    font-size: 12px;
+    color: #757575;
 }
